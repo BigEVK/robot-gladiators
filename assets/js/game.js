@@ -70,12 +70,16 @@ var fight = function (enemyName) {
         }
         // if no (false), ask ask question again by running fight() again
         else {
-            fight();
+           
         }
     } else {
             window.alert("You need to choose a valid option. Try again!"); 
     }
-}
+
+    }
+    for(var i = 0; i < enemyNames.length; i++) {
+        fight(enemyNames[i]);
+      };
 // fight();
 
 
